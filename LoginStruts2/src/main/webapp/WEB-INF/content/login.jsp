@@ -3,21 +3,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title><s:property value="titulo"/></title>
+        <title><s:property value="formTitulo" /></title>
     </head>
     <body>
-        <h1><s:property value="titulo"/></h1>
+        <h1><s:property value="formTitulo"/></h1>
         <s:form>
-            <s:property value="usuario"/>
-            <s:textfield name="txtusuario"/>
-            <br>
-            <s:password key="form.password" name="txtpassword"/>
-            <s:submit key="form.boton" name="submit"/>
+            <s:textfield key="form.usuario" name="usuario" />
+            <s:password key="form.password" name="password"/>
+            <s:submit key="form.boton" name="submit" />
         </s:form>
+        <br/>
         <div>
-            <s:property value="valores"/><br>
-            <s:property value="usuario"/> : <s:property value="txtusuario"/><br>
-            <s:property value="password"/> : <s:property value="txtpassword"/>
+            <s:text name="form.valores"/>:
+            <br/>
+            <s:property value="formUsuario"/> : <s:property value="usuario"/>
+            <br/>
+            <s:property value="formPassword" /> : <s:property value="password"/>
         </div>
     </body>
 </html>
